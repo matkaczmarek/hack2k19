@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mat_k.hack2k19">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -20,6 +21,11 @@
         </activity>
         <activity android:name=".ZgloszenieLayout">
         </activity>
+     
+        <activity android:name=".DetailsLayout">
+        </activity>
+        <activity android:name=".AddPhotoLayout">
+         </activity>
         <activity android:name=".SmieciLayout">
         </activity>
     </application>

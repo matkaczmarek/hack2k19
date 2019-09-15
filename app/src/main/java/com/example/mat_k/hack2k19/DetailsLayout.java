@@ -11,31 +11,31 @@ import android.widget.Button;
  * Created by mat_k on 14.09.2019.
  */
 
-public class ZgloszenieLayout extends AppCompatActivity{
+public class DetailsLayout extends AppCompatActivity{
 
-    Button niehuman;
+    Button photo;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.donos_layout);
+        setContentView(R.layout.details_layout);
     }
 
 
     @Override
     protected void onStart() {
         super.onStart();
-        addNiehumanButtonListenerOnButton(this);
+        addPhotoButtonListenerOnButton(this);
     }
 
-    public void addNiehumanButtonListenerOnButton(final Activity activity) {
-        niehuman = (Button) findViewById(R.id.niehumanitarne);
+    public void addPhotoButtonListenerOnButton(final Activity activity) {
+        photo = (Button) findViewById(R.id.addPhoto);
 
-        niehuman.setOnClickListener(new View.OnClickListener() {
+        photo.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
-                startActivity(new Intent(ZgloszenieLayout.this, DetailsLayout.class));
+                startActivity(new Intent(DetailsLayout.this, AddPhotoLayout.class));
             }
 
         });
