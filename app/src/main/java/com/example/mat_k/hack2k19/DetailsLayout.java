@@ -3,6 +3,7 @@ package com.example.mat_k.hack2k19;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +12,7 @@ import android.widget.Button;
  * Created by mat_k on 14.09.2019.
  */
 
-public class DetailsLayout extends AppCompatActivity{
+public class DetailsLayout extends AppCompatActivity {
 
     Button photo;
 
@@ -30,14 +31,14 @@ public class DetailsLayout extends AppCompatActivity{
 
     public void addPhotoButtonListenerOnButton(final Activity activity) {
         photo = (Button) findViewById(R.id.addPhoto);
-
         photo.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View arg0) {
-                startActivity(new Intent(DetailsLayout.this, AddPhotoLayout.class));
+            public void onClick(View v) {
+                Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+                startActivity(intent);
             }
-
         });
     }
+
+
 }
