@@ -28,6 +28,8 @@
          </activity>
         <activity android:name=".SmieciLayout">
         </activity>
+        <activity android:name=".SignInLayout">
+        </activity>
     </application>
 
 </manifest>
