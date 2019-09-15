@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonWysypiska"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="DZIKIE WYSYPISKA SMIECI"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPosesja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPosesja"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="SMIECI NA TERENIE POSESJI"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSpalanie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWysypiska" />
+
+    <Button
+        android:id="@+id/buttonSpalanie"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="SPALANIE ODPADOW, SMIECI"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPojemniki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPosesja" />
+
+    <Button
+        android:id="@+id/buttonPojemniki"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="BRAK POJEMNIKOW DO SEGREGACJI SMIECI"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNiebepieczne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSpalanie" />
+
+    <Button
+        android:id="@+id/buttonNiebepieczne"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="POSTEPOWANIE Z ODPADAMI NIEBEZPIECZNYMI "
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPojemniki" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="POSTĘPOWANIE ZE ZUŻYTYM SPRZĘTEM ELEKTRYCZNYM LUB ELEKTRONICZNYM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNiebepieczne" />
+
+</android.support.constraint.ConstraintLayout>
