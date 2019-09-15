@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button intervenceButton;
+    Button log;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 startActivity(new Intent(MainActivity.this, InterwencjaLayout.class));
+            }
+
+        });
+
+
+        log = (Button) findViewById(R.id.log);
+
+        log.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                startActivity(new Intent(MainActivity.this, SignInLayout.class));
             }
 
         });
