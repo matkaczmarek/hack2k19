@@ -13,7 +13,7 @@ import android.widget.Button;
 
 public class InterwencjaLayout extends AppCompatActivity{
 
-    Button animalsButton;
+    Button animalsButton, trashButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -26,10 +26,11 @@ public class InterwencjaLayout extends AppCompatActivity{
     protected void onStart() {
         super.onStart();
         addAnimalsButtonListenerOnButton(this);
+        addTrashButtonListenerOnButton(this);
     }
 
     public void addAnimalsButtonListenerOnButton(final Activity activity) {
-        animalsButton = (Button) findViewById(R.id.animals_button);
+        animalsButton = findViewById(R.id.animals_button);
 
         animalsButton.setOnClickListener(new View.OnClickListener() {
 
@@ -39,5 +40,19 @@ public class InterwencjaLayout extends AppCompatActivity{
             }
 
         });
+    }
+
+    public void addTrashButtonListenerOnButton(final Activity activity) {
+        trashButton = findViewById(R.id.trash_button);
+
+        trashButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                startActivity(new Intent(InterwencjaLayout.this, SmieciLayout.class));
+            }
+
+        });
+
     }
 }
