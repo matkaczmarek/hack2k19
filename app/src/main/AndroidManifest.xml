@@ -21,9 +21,12 @@
         </activity>
         <activity android:name=".ZgloszenieLayout">
         </activity>
+     
         <activity android:name=".DetailsLayout">
         </activity>
         <activity android:name=".AddPhotoLayout">
+         </activity>
+        <activity android:name=".SmieciLayout">
         </activity>
     </application>
 
